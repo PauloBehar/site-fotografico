@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#171816">
+    <meta name="description" content="Fine art de Paulo Behar: vida selvagem, paisagens, arquitetura e cidades, preto e branco.">
+    <title>Fine Art — Paulo Behar</title>
+    <link rel="stylesheet" href="codigo/styles.css?v=202611132100">
+    <script src="site-midia/galerias.js?v=202611132100" defer></script>
+    <script src="codigo/script.js?v=202611132100" defer></script>
+    <script src="codigo/galeria.js?v=202611132100" defer></script>
+    <script src="codigo/movimento.js?v=202611132100" defer></script>
+  </head>
+  <body class="page-gallery">
+    <a class="skip-link" href="#conteudo" data-i18n="skip">Pular para o conteúdo</a>
+
+    <header class="site-header">
+      <a class="wordmark" href="index.html" aria-label="Paulo Behar — início">
+        <span class="wordmark__name">Paulo Behar</span>
+        <span class="wordmark__role" data-i18n="role">Fotografia</span>
+      </a>
+      <nav class="main-nav" aria-label="Navegação principal" data-i18n-aria="navLabel">
+        <a href="fine-art.html" aria-current="page" data-i18n="navFineArt">galerias</a>
+        <a href="index.html#livros" data-i18n="navBooks">livros</a>
+        <a href="exposicoes.html" data-i18n="navExhibitions">exposições</a>
+        <a href="sobre.html" data-i18n="navAbout">sobre</a>
+      </nav>
+      <div class="language-switch" role="group" aria-label="Selecionar idioma" data-i18n-aria="languageLabel">
+        <button type="button" lang="pt-BR" data-language="pt" aria-pressed="true">PT</button>
+        <span aria-hidden="true">/</span>
+        <button type="button" lang="en" data-language="en" aria-pressed="false">EN</button>
+        <span aria-hidden="true">/</span>
+        <button type="button" lang="es" data-language="es" aria-pressed="false">ES</button>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <section class="gallery-intro" aria-labelledby="gallery-title">
+        <p class="eyebrow">fine art</p>
+        <h1 id="gallery-title" data-i18n="galleryTitle">galerias</h1>
+        <span class="gold-rule"></span>
+        <nav class="gallery-nav" aria-label="Galerias">
+          <a href="#vida-selvagem" data-i18n="galWildlife">vida selvagem</a>
+          <a href="#paisagens" data-i18n="galLandscapes">paisagens</a>
+          <a href="#arquitetura-cidades" data-i18n="galArchitecture">arquitetura &amp; cidades</a>
+          <a href="#preto-e-branco" data-i18n="galBlackWhite">preto &amp; branco</a>
+        </nav>
+      </section>
+
+      <section class="gallery" id="vida-selvagem" aria-labelledby="g1">
+        <header class="gallery__head">
+          <h2 id="g1" data-i18n="galWildlife">vida selvagem</h2>
+          <span class="gold-rule"></span>
+        </header>
+        <div class="gallery__grid" data-galeria="vida-selvagem"></div>
+      </section>
+
+      <section class="gallery" id="paisagens" aria-labelledby="g2">
+        <header class="gallery__head">
+          <h2 id="g2" data-i18n="galLandscapes">paisagens</h2>
+          <span class="gold-rule"></span>
+        </header>
+        <div class="gallery__grid" data-galeria="paisagens"></div>
+      </section>
+
+      <section class="gallery" id="arquitetura-cidades" aria-labelledby="g3">
+        <header class="gallery__head">
+          <h2 id="g3" data-i18n="galArchitecture">arquitetura &amp; cidades</h2>
+          <span class="gold-rule"></span>
+        </header>
+        <div class="gallery__grid" data-galeria="arquitetura-cidades"></div>
+      </section>
+
+      <section class="gallery" id="preto-e-branco" aria-labelledby="g4">
+        <header class="gallery__head">
+          <h2 id="g4" data-i18n="galBlackWhite">preto &amp; branco</h2>
+          <span class="gold-rule"></span>
+        </header>
+        <div class="gallery__grid" data-galeria="preto-e-branco"></div>
+      </section>
+    </main>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Foto ampliada" hidden>
+      <figure class="lightbox__figure">
+        <img class="lightbox__img" id="lightbox-img" alt="">
+        <figcaption class="lightbox__caption">
+          <span class="lightbox__title" id="lightbox-title"></span>
+          <span class="gold-rule"></span>
+          <span class="lightbox__meta"><span>© Paulo Behar</span><span id="lightbox-count"></span></span>
+        </figcaption>
+      </figure>
+      <button class="lightbox__btn lightbox__close" type="button" id="lightbox-close" aria-label="Fechar">×</button>
+      <button class="lightbox__btn lightbox__prev" type="button" id="lightbox-prev" aria-label="Anterior">‹</button>
+      <button class="lightbox__btn lightbox__next" type="button" id="lightbox-next" aria-label="Próxima">›</button>
+    </div>
+
+    <footer class="site-footer">
+      <a class="wordmark wordmark--footer" href="index.html">
+        <span class="wordmark__name">Paulo Behar</span>
+        <span class="wordmark__role" data-i18n="role">Fotografia</span>
+      </a>
+      <a class="back-to-top site-footer__insta" href="https://www.instagram.com/phbehar/" target="_blank" rel="noopener">instagram @phbehar ↗</a>
+      <span class="site-footer__copyright"><span data-i18n="copyright">© Paulo Behar</span> <span id="year">2026</span></span>
+      <a class="back-to-top" href="#" data-i18n="backToTop">Voltar ao início ↑</a>
+      <p class="site-footer__rights" data-i18n="rights">Todas as fotografias são protegidas por direitos autorais (Lei 9.610/98). Reprodução proibida sem autorização. Ampliações fine art sob consulta.</p>
+    </footer>
+  </body>
+</html>

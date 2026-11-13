@@ -1,0 +1,13 @@
+.DS_Store
+
+# Material bruto de divulgação: fica só no Dropbox, não vai para o GitHub
+material-divulgacao/*
+!material-divulgacao/LEIA-ME.md
+
+# Bastidores: ficam só no Dropbox, não vão para o GitHub (repositório público)
+NOTAS.md
+selecao.tsv
+
+# Ferramenta compilada (cada computador gera a sua) e temporários
+codigo/ferramentas/.webexport
+*.tmp.jpg

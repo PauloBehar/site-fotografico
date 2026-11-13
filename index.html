@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#171816">
+    <meta
+      name="description"
+      content="Fotografia de Paulo Behar: fine art, livros e exposições."
+    >
+    <title>Paulo Behar — Fotografia</title>
+    <link rel="stylesheet" href="codigo/styles.css?v=202611132100">
+    <script>
+      // A abertura aparece sempre que a página inicial carrega (inclusive ao atualizar),
+      // exceto quando se chega por um link direto para uma seção (ex.: index.html#livros).
+      if (location.hash) document.documentElement.classList.add("intro-seen");
+    </script>
+    <script src="codigo/script.js?v=202611132100" defer></script>
+    <script src="codigo/movimento.js?v=202611132100" defer></script>
+  </head>
+  <body>
+    <div class="intro" id="intro">
+      <span class="intro__name">paulo behar</span>
+      <span class="gold-rule intro__rule"></span>
+      <span class="intro__role" data-i18n="introRole">fotografia · fine art</span>
+      <button class="intro__enter" type="button" id="intro-enter">
+        <span class="note" aria-hidden="true">♪</span>
+        <span data-i18n="enterWithSound">entrar com som</span>
+      </button>
+    </div>
+
+    <a class="skip-link" href="#conteudo" data-i18n="skip">Pular para o conteúdo</a>
+
+    <header class="site-header">
+      <a class="wordmark" href="#" aria-label="Paulo Behar — início">
+        <span class="wordmark__name">Paulo Behar</span>
+        <span class="wordmark__role" data-i18n="role">Fotografia</span>
+      </a>
+      <nav class="main-nav" aria-label="Navegação principal" data-i18n-aria="navLabel">
+        <a href="fine-art.html" data-i18n="navFineArt">galerias</a>
+        <a href="index.html#livros" data-i18n="navBooks">livros</a>
+        <a href="exposicoes.html" data-i18n="navExhibitions">exposições</a>
+        <a href="sobre.html" data-i18n="navAbout">sobre</a>
+      </nav>
+      <div class="language-switch" role="group" aria-label="Selecionar idioma" data-i18n-aria="languageLabel">
+        <button type="button" lang="pt-BR" data-language="pt" aria-pressed="true">PT</button>
+        <span aria-hidden="true">/</span>
+        <button type="button" lang="en" data-language="en" aria-pressed="false">EN</button>
+        <span aria-hidden="true">/</span>
+        <button type="button" lang="es" data-language="es" aria-pressed="false">ES</button>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <!-- 1. o filme do livro -->
+      <section class="film is-muted" id="film" aria-labelledby="film-title">
+        <video
+          class="film__video"
+          id="film-video"
+          src="site-midia/videos/felinos-do-brasil.mp4"
+          muted
+          loop
+          playsinline
+          preload="auto"
+        ></video>
+        <div class="film__bar">
+          <div class="film__caption">
+            <span class="film__author">paulo behar</span>
+            <span class="gold-rule"></span>
+            <h2 class="film__title" id="film-title" data-i18n="filmTitle">felinos do brasil · o livro</h2>
+          </div>
+          <button class="film__sound" type="button" id="film-sound" aria-pressed="false">
+            <span class="note" aria-hidden="true">♪</span>
+            <span class="film__sound-label">ligar o som</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- 2. a frase e as três portas -->
+      <section class="hub" aria-labelledby="hub-title">
+        <h1 class="hub__title" id="hub-title" data-i18n="heroTitle">Fotografias para olhar <em>com calma.</em></h1>
+        <span class="gold-rule"></span>
+        <nav class="doors" aria-label="Seções do site">
+          <a class="door" href="#galerias">
+            <span class="door__img"><img src="site-midia/fotos/destaque/arara-mini.jpg" alt="" loading="lazy"></span>
+            <span class="door__label" data-i18n="doorGalleries">galerias</span>
+          </a>
+          <a class="door" href="#livros">
+            <span class="door__img"><img src="site-midia/fotos/destaque/onca-preta-mini.jpg" alt="" loading="lazy"></span>
+            <span class="door__label" data-i18n="navBooks">livros</span>
+          </a>
+          <a class="door" href="exposicoes.html">
+            <span class="door__img"><img src="site-midia/fotos/destaque/onca-gaia-mini.jpg" alt="" loading="lazy"></span>
+            <span class="door__label" data-i18n="navExhibitions">exposições</span>
+          </a>
+        </nav>
+      </section>
+
+      <!-- 3. livros: a onça-preta da capa cresce até a tela cheia -->
+      <section class="zoom" id="livros" aria-labelledby="book-title">
+        <div class="zoom__sticky">
+          <div class="zoom__frame">
+            <img class="zoom__img" src="site-midia/fotos/destaque/felinos-capa.jpg" alt="Capa do livro Felinos do Brasil, de Paulo Behar: onça-preta caminhando na vegetação" loading="lazy" decoding="async">
+          </div>
+          <div class="zoom__caption">
+            <span class="zoom__kicker" data-i18n="bookKicker">o livro</span>
+            <span class="zoom__rule"></span>
+            <h2 class="zoom__title sr-only" id="book-title">felinos do brasil</h2>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. galerias: a arara em voo se abre como cortina e leva às quatro galerias -->
+      <section class="band" id="galerias" aria-labelledby="galleries-title">
+        <div class="band__frame">
+          <img class="band__img" src="site-midia/fotos/destaque/arara.jpg" alt="Arara-vermelha em voo" loading="lazy" decoding="async">
+        </div>
+        <div class="band__caption zoom__caption">
+          <span class="zoom__kicker">fine art</span>
+          <span class="zoom__rule"></span>
+          <h2 class="zoom__title" id="galleries-title" data-i18n="doorGalleries">galerias</h2>
+        </div>
+      </section>
+
+      <nav class="subdoors" aria-label="Galerias">
+        <a class="door" href="fine-art.html#vida-selvagem">
+          <span class="door__img"><img src="site-midia/fotos/destaque/onca-filme-mini.jpg" alt="" loading="lazy"></span>
+          <span class="door__label" data-i18n="galWildlife">vida selvagem</span>
+        </a>
+        <a class="door" href="fine-art.html#paisagens">
+          <span class="door__img"><img src="site-midia/fotos/destaque/wanaka-tree-porta.jpg" alt="" loading="lazy" style="object-position: 50% 30%"></span>
+          <span class="door__label" data-i18n="galLandscapes">paisagens</span>
+        </a>
+        <a class="door" href="fine-art.html#arquitetura-cidades">
+          <span class="door__img"><img src="site-midia/fotos/fine-art/arquitetura-cidades/mini/petra-by-night.jpg" alt="" loading="lazy"></span>
+          <span class="door__label" data-i18n="galArchitecture">arquitetura &amp; cidades</span>
+        </a>
+        <a class="door" href="fine-art.html#preto-e-branco">
+          <span class="door__img"><img src="site-midia/fotos/fine-art/preto-e-branco/mini/puma.jpg" alt="" loading="lazy" style="object-position: 28% 50%"></span>
+          <span class="door__label" data-i18n="galBlackWhite">preto &amp; branco</span>
+        </a>
+      </nav>
+
+      <!-- 5. exposições: a onça da mostra "Gaia, Planeta Vivo", também em cortina -->
+      <section class="band" id="exposicoes" aria-labelledby="shows-title">
+        <div class="band__frame">
+          <img class="band__img" src="site-midia/fotos/destaque/onca-gaia.jpg" alt="Onça-pintada correndo na água, imagem da mostra Gaia, Planeta Vivo" loading="lazy" decoding="async">
+        </div>
+        <div class="band__caption zoom__caption">
+          <span class="zoom__kicker">gaia, planeta vivo</span>
+          <span class="zoom__rule"></span>
+          <h2 class="zoom__title" id="shows-title" data-i18n="navExhibitions">exposições</h2>
+        </div>
+      </section>
+
+      <section class="shows" aria-label="Lista de exposições">
+        <ul class="shows__list">
+          <li>
+            <a class="shows__name" href="exposicoes.html#olhares-revelados">Olhares Revelados</a>
+            <span class="shows__place">Museu Afro Brasil · Parque Ibirapuera, São Paulo</span>
+          </li>
+          <li>
+            <a class="shows__name" href="exposicoes.html#parallax">Parallax Art Fair</a>
+            <span class="shows__place">Londres, Reino Unido</span>
+          </li>
+          <li>
+            <a class="shows__name" href="exposicoes.html#gaia">Gaia, Planeta Vivo</a>
+            <span class="shows__place">Câmara Municipal de Arujá, São Paulo</span>
+          </li>
+          <li>
+            <a class="shows__name" href="exposicoes.html#auckland">Auckland Festival of Photography</a>
+            <span class="shows__place">Auckland, Nova Zelândia</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 6. fecho -->
+      <section class="closing-note" aria-label="Nota do fotógrafo" data-i18n-aria="closingLabel">
+        <span class="gold-rule"></span>
+        <p data-i18n="closingText">Toda fotografia começa com um instante.<br>O olhar é o que fica.</p>
+        <span class="closing-note__signature">Paulo Behar</span>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="wordmark wordmark--footer" href="#">
+        <span class="wordmark__name">Paulo Behar</span>
+        <span class="wordmark__role" data-i18n="role">Fotografia</span>
+      </a>
+      <a class="back-to-top site-footer__insta" href="https://www.instagram.com/phbehar/" target="_blank" rel="noopener">instagram @phbehar ↗</a>
+      <span class="site-footer__copyright"><span data-i18n="copyright">© Paulo Behar</span> <span id="year">2026</span></span>
+      <a class="back-to-top" href="#" data-i18n="backToTop">Voltar ao início ↑</a>
+      <p class="site-footer__rights" data-i18n="rights">Todas as fotografias são protegidas por direitos autorais (Lei 9.610/98). Reprodução proibida sem autorização. Ampliações fine art sob consulta.</p>
+    </footer>
+  </body>
+</html>
